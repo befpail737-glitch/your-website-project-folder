@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Center | Company & Industry Updates | LiTong</title>
     <meta name="description" content="Stay updated with the latest news from LiTong and insights on the power electronics industry. Read about MORNSUN product launches, market trends, and more.">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="main-header">
-        <!-- Update nav to make News active -->
-        ...
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.svg" alt="LiTong Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/index.html">Products</a></li>
+                    <li><a href="../solutions/index.html">Solutions</a></li>
+                    <li><a href="../support/index.html">Technical Support</a></li>
+                    <li><a href="index.html" class="active">News</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -51,10 +65,35 @@
             </div>
         </section>
 
+        <!-- News Categories -->
+        <section class="container">
+            <div class="category-filters">
+                <a href="#" class="filter-button active" data-filter="all">All News</a>
+                <a href="#" class="filter-button" data-filter="industry">Industry Insights</a>
+                <a href="#" class="filter-button" data-filter="company">Company News</a>
+                <a href="#" class="filter-button" data-filter="products">Product Updates</a>
+                <a href="#" class="filter-button" data-filter="events">Events</a>
+            </div>
+        </section>
+
+        <!-- News Hero Section -->
+        <section class="news-hero-section">
+            <div class="container">
+                <div class="news-hero-content">
+                    <h2>Stay Informed with LiTong</h2>
+                    <p>Get the latest updates on power electronics, industry trends, and company news delivered to your inbox</p>
+                    <div class="news-subscription">
+                        <input type="email" placeholder="Enter your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container">
             <!-- Modern News Section -->
             <div class="modern-section-header">
-                <h2>Latest News & Updates</h2>
+                <h2>Featured Articles & Updates</h2>
                 <p>Industry insights, company news, and technical developments</p>
             </div>
             <section class="article-category">
@@ -82,17 +121,46 @@
                             </a>
                         </div>
                     </article>
+
+                    <!-- Additional Industry Article -->
+                    <article class="modern-card" data-category="industry">
+                        <div class="modern-card-image">
+                            <img src="../images/content/industry-trends.svg" alt="Industry Trends" loading="lazy">
+                            <span class="card-category-badge">Trends</span>
+                        </div>
+                        <div class="modern-card-content">
+                            <h3 class="modern-card-title">
+                                <a href="industry-trends-2025.html">Power Electronics Industry Trends 2025</a>
+                            </h3>
+                            <div class="modern-card-meta">
+                                <span>Market Analysis</span>
+                                <span>Aug 10, 2025</span>
+                            </div>
+                            <p class="modern-card-excerpt">Comprehensive analysis of emerging trends in power electronics, including GaN adoption, digital power management, and sustainability initiatives driving industry transformation.</p>
+                            <a href="industry-trends-2025.html" class="modern-card-action">
+                                Read Analysis
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14m-7-7l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </section>
             
             <!-- Company News Section -->
             <section class="article-category">
-                <h2>Company News</h2>
-                 <div class="card-grid">
-                    <article class="card">
-                        <a href="#"><img src="/cdn-cgi/image/width=400,quality=80,format=auto/../assets/images/content/company-update.jpg" alt="Warehouse with boxes" loading="lazy"></a>
-                        <div class="card-content">
-                            <h3><a href="#">LiTong Expands Warehouse to Increase MORNSUN Stock</a></h3>
+                <h3>Company News</h3>
+                <div class="modern-card-grid">
+                    <article class="modern-card" data-category="company">
+                        <div class="modern-card-image">
+                            <img src="../images/content/company-update.svg" alt="Company Update" loading="lazy">
+                            <span class="card-category-badge">Company</span>
+                        </div>
+                        <div class="modern-card-content">
+                            <h3 class="modern-card-title">
+                                <a href="litong-expands-warehouse.html">LiTong Expands Warehouse to Increase MORNSUN Stock</a>
+                            </h3>
                             <p class="article-meta">Published: Aug 01, 2025 | Category: Company News</p>
                             <p>To better serve our customers, we have recently expanded our primary warehouse, doubling our stock capacity for key MORNSUN product lines.</p>
                             <a href="#" class="read-more">Read More &rarr;</a>

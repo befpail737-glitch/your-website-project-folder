@@ -7,22 +7,22 @@
     <title>Industry Power Solutions | MORNSUN Distributor | LiTong</title>
     <meta name="description" content="Explore industry-specific power solutions from LiTong, your authorized MORNSUN distributor. We provide expert-designed solutions for EV charging, industrial control, medical, and more.">
     
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
-            <a href="../index.html" class="logo"><img src="../assets/images/logo.svg" alt="LiTong Logo"></a>
+            <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="LiTong Logo"></a>
             <nav class="main-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../products/ac-dc-converters.html">Products</a></li>
+                    <li><a href="../products/index.html">Products</a></li>
                     <li><a href="index.html" class="active">Solutions</a></li>
-                    <li><a href="#">Technical Support</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../support/index.html">Technical Support</a></li>
+                    <li><a href="../news/index.html">News</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,25 +66,54 @@
             </div>
         </section>
 
+        <!-- Industry Filter Tabs -->
+        <section class="container">
+            <div class="category-filters">
+                <a href="#" class="filter-button active" data-filter="all">All Industries</a>
+                <a href="#" class="filter-button" data-filter="automotive">Automotive & EV</a>
+                <a href="#" class="filter-button" data-filter="industrial">Industrial</a>
+                <a href="#" class="filter-button" data-filter="medical">Medical</a>
+                <a href="#" class="filter-button" data-filter="energy">Energy & Grid</a>
+            </div>
+        </section>
+
         <!-- Solutions Grid -->
         <section class="container">
             <div class="modern-section-header">
                 <h2>Featured Power Solutions</h2>
                 <p>Discover how our power solutions address real-world challenges across multiple industries</p>
             </div>
-            <div class="modern-card-grid">
+            <div class="solutions-grid-container">
                 <!-- Solution 1: EV Charging Station -->
-                <div class="modern-solution-card">
+                <div class="modern-solution-card" data-category="automotive">
+                    <div class="solution-card-header">
+                        <span class="solution-industry-tag automotive">Automotive & EV</span>
+                        <span class="solution-complexity">Advanced Solution</span>
+                    </div>
                     <div class="modern-solution-card-image">
                         <img src="../images/solutions/solution-ev-banner.svg" alt="EV Charging Station Solution" loading="lazy">
+                        <div class="solution-overlay">
+                            <div class="solution-power-rating">50kW-350kW</div>
+                        </div>
                     </div>
                     <div class="modern-solution-card-content">
                         <h2><a href="ev-charging-station.html">EV Charging Station Power</a></h2>
-                        <p class="solution-summary">Complete power architecture for AC and DC EV charging stations, featuring robust outdoor-rated converters with superior EMC performance and wide temperature operation.</p>
+                        <p class="solution-summary">Complete power architecture for AC and DC EV charging stations, featuring robust outdoor-rated converters with superior EMC performance and wide temperature operation for 24/7 reliability.</p>
                         <div class="solution-features">
-                            <span class="solution-feature">Outdoor Rated</span>
-                            <span class="solution-feature">EMC Certified</span>
-                            <span class="solution-feature">Wide Temperature</span>
+                            <span class="solution-feature">Outdoor IP65 Rated</span>
+                            <span class="solution-feature">EMC Class B Certified</span>
+                            <span class="solution-feature">-40°C to +85°C</span>
+                            <span class="solution-feature">MTBF >100k Hours</span>
+                        </div>
+                        <div class="solution-metrics">
+                            <div class="metric">
+                                <span class="metric-value">99.5%</span>
+                                <span class="metric-label">Efficiency</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">15+</span>
+                                <span class="metric-label">Deployed Sites</span>
+                            </div>
                         </div>
                         <a href="ev-charging-station.html" class="modern-card-action">
                             Explore Solution
