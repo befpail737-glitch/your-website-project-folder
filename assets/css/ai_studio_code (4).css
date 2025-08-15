@@ -1,0 +1,102 @@
+/* --- BATCH 5: ABOUT, CONTACT, FAQ STYLES --- */
+
+/* --- About Us Page --- */
+.about-us-container {
+    padding: 40px 20px;
+}
+.about-section {
+    margin-bottom: 60px;
+}
+.text-image-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.text-image-section .image-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+.commitments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.commitment-item {
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+}
+.certificate-container {
+    text-align: center;
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+}
+.certificate-container h3 {
+    margin-top: 0;
+}
+.certificate-container img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+.certificate-container img:hover {
+    transform: scale(1.02);
+}
+
+/* --- Contact Page --- */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    padding: 40px 20px 60px 20px;
+}
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+.contact-details li {
+    margin-bottom: 20px;
+}
+.contact-details li a {
+    color: var(--primary-color);
+}
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.map-container {
+    width: 100%;
+}
+
+/* --- FAQ Page --- */
+.faq-page-container {
+    padding: 40px 20px 60px 20px;
+    max-width: 900px;
+}
+.faq-page-container h2 {
+    margin-top: 30px;
+}
+
+/* --- Responsive for final pages --- */
+@media (max-width: 900px) {
+    .text-image-section, .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
