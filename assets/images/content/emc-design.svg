@@ -1,0 +1,17 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f4f4f4"/>
+  <rect x="0" y="0" width="300" height="40" fill="#00AEEF"/>
+  <text x="150" y="25" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">EMC Design Guide</text>
+  
+  <!-- Circuit diagram representation -->
+  <rect x="50" y="70" width="200" height="100" fill="white" stroke="#0033A0" stroke-width="2"/>
+  <circle cx="100" cy="100" r="15" fill="#FFC72C"/>
+  <rect x="140" y="90" width="20" height="20" fill="#0033A0"/>
+  <circle cx="200" cy="120" r="10" fill="#00AEEF"/>
+  
+  <!-- Connection lines -->
+  <line x1="115" y1="100" x2="140" y2="100" stroke="#333" stroke-width="2"/>
+  <line x1="160" y1="100" x2="190" y2="120" stroke="#333" stroke-width="2"/>
+  
+  <text x="150" y="180" font-family="Arial, sans-serif" font-size="12" fill="#0033A0" text-anchor="middle">EMC Best Practices</text>
+</svg>
