@@ -1,1 +1,51 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TD501DCAN | MORNSUN Isolated CAN Transceiver Distributor</title><meta name="description" content="Source the MORNSUN TD501DCAN, an integrated, isolated CAN bus transceiver module. Ensures robust communication in industrial and automotive applications."><script type="application/ld+json">{"@context":"https://schema.org/","@type":"Product","name":"MORNSUN TD501DCAN","image":"https://www.yourdomain.com/assets/images/products/td-can-series.svg","description":"The TD501DCAN from MORNSUN is a complete, integrated isolated CAN bus transceiver, combining power isolation, signal isolation, and a CAN transceiver in one compact module.","sku":"TD501DCAN","brand":{"@type":"Brand","name":"MORNSUN"},"offers":{"@type":"Offer","url":"https://www.yourdomain.com/products/td501dcan.html","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"LiTong"}}}</script><link rel="stylesheet" href="../assets/css/style.css"></head><body><header class="main-header">...</header><main><div class="page-header"><div class="container"><nav class="breadcrumbs"><a href="../index.html">Home</a> &gt; <a href="index.html">Products</a> &gt; <span>TD501DCAN</span></nav></div></div><div class="product-detail-layout container"><div class="product-gallery"><img src="/cdn-cgi/image/width=500,quality=85,format=auto/../assets/images/products/td-can-series.svg" alt="MORNSUN TD501DCAN CAN Transceiver"><div class="product-cta-group"><a href="../contact.html" class="btn">Get a Quote</a><a href="../contact.html" class="btn-secondary">Request a Sample</a><a href="#" class="btn-secondary">Download Datasheet (PDF)</a><a href="../contact.html" class="btn-tertiary">Ask an FAE a Question</a></div></div><div class="product-info"><h1>MORNSUN TD501DCAN</h1><p class="product-short-description">High-Speed 1Mbps Isolated CAN Bus Transceiver Module</p><div class="distributor-review"><h3>FAE Distributor's Review</h3><p>The TD-CAN series revolutionizes industrial communication design. Instead of designing a discrete solution with a separate isolated power supply, optocouplers, and a CAN transceiver, this module integrates everything into a single, pre-certified package. This dramatically reduces board space, simplifies design, and improves reliability by eliminating multiple points of failure. It's the perfect solution for robust CAN communication in noisy industrial environments, BMS, and EV chargers.</p></div><div class="product-specs"><h3>Key Specifications</h3><table><tr><td>Data Rate</td><td>Up to 1Mbps</td></tr><tr><td>Isolation Voltage</td><td>3000VDC</td></tr><tr><td>Bus Nodes</td><td>Up to 110</td></tr><tr><td>Supply Voltage</td><td>4.75-5.25V</td></tr><tr><td>Protections</td><td>Bus-Pin ESD, Over-temp, Short-circuit</td></tr><tr><td>Package</td><td>Compact SMD/DIP</td></tr></table></div></div></div><div class="product-extra-details container"><div class="faq-section"><h2>Frequently Asked Questions</h2><details class="faq-item"><summary>What does "integrated isolation" mean?</summary><p>It means the module includes a built-in DC/DC converter to provide an isolated power supply for the bus side of the transceiver, as well as digital signal isolation for the TXD/RXD lines. This breaks ground loops and protects the microcontroller from high voltage faults on the bus.</p></details><details class="faq-item"><summary>Is a termination resistor included?</summary><p>No, a 120-ohm termination resistor is typically required at the two ends of the CAN bus, but it is not integrated into the module. This allows for greater flexibility in network design.</p></details></div></div></main><footer class="main-footer">...</footer><script src="../assets/js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Power Supply Derating Curves | LiTong Support</title>
+    <meta name="description" content="Learn why derating is critical for power supply reliability. Our FAEs explain how to read temperature and input voltage derating curves on a MORNSUN datasheet.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <!-- Header content with correct navigation links and 'active' class on Support -->
+        <div class="container"><a href="../index.html" class="logo">...</a><nav class="main-nav"><ul>...<li><a href="index.html" class="active">Technical Support</a></li>...</ul></nav></div>
+    </header>
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <nav class="breadcrumbs"><a href="../index.html">Home</a> &gt; <a href="index.html">Technical Support</a> &gt; <span>Understanding Derating Curves</span></nav>
+            </div>
+        </div>
+        <div class="article-layout container">
+            <article class="article-content">
+                <h1>Understanding Power Supply Derating Curves</h1>
+                <div class="article-meta-detailed"><span>By: John Doe, Senior FAE</span> | <span>Published: Aug 12, 2025</span></div>
+                
+                <p>One of the most common causes of premature power supply failure is neglecting to derate. A power supply's maximum output power is not always available under all operating conditions. Derating is the practice of operating a component at less than its maximum rated power to ensure reliability. MORNSUN datasheets provide clear derating curves to guide this process.</p>
+                
+                <h2>1. What is Temperature Derating?</h2>
+                <p>As the ambient temperature around a power supply increases, its ability to dissipate its own internal heat decreases. To prevent overheating, the maximum load you can draw from the supply must be reduced. This is shown in the "Temperature Derating Curve".</p>
+                <p>Typically, a module like the <a href="../products/lm75-20b24.html">LM75-20B24</a> might offer 100% of its rated load up to 50°C. Above that, the curve will show a linear decrease. For example, at 70°C, you might only be able to draw 60% of the maximum load. Always design for your system's worst-case internal ambient temperature.</p>
+
+                <h2>2. What is Input Voltage Derating?</h2>
+                <p>Some power supplies, especially wide-input DC/DC converters, may need to be derated at the lower end of their input voltage range. This is because to deliver the same output power with a lower input voltage, the input current must increase (P = V * I). This higher current can cause additional stress and heating on the input-side components.</p>
+                <p>The "Input Voltage Derating Curve" will show if you need to reduce the maximum output power when operating near the minimum specified input voltage.</p>
+
+                <h2>Conclusion: Why It Matters</h2>
+                <p>Properly applying derating based on the datasheet curves is not optional; it is essential for designing a reliable, long-lasting product. Pushing a power supply to its absolute limits without considering temperature and input voltage is a recipe for field failures. When in doubt, our FAE team can help you interpret these curves for your specific application.</p>
+                
+                <div class="article-tags">
+                    <strong>Tags:</strong> <a href="#">Derating</a>, <a href="#">Reliability</a>, <a href="#">Datasheet</a>, <a href="#">Thermal Management</a>
+                </div>
+            </article>
+            <aside class="article-sidebar">
+                <!-- Author Box and Related Articles -->
+                 <div class="author-box">...</div><div class="related-articles"><h3>Related Articles</h3><ul><li><a href="thermal-management.html">Power Supply Thermal Management Basics</a></li><li><a href="select-mornsun-ac-dc.html">How to Choose the Right MORNSUN AC/DC Power Supply</a></li></ul></div>
+            </aside>
+        </div>
+    </main>
+    <footer class="main-footer">...</footer>
+</body>
+</html>

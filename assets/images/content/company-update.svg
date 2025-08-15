@@ -1,13 +1,1 @@
-<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="300" height="200" fill="#f4f4f4"/>
-  <rect x="0" y="0" width="300" height="40" fill="#0033A0"/>
-  <text x="150" y="25" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Company Update</text>
-  
-  <circle cx="80" cy="100" r="30" fill="#00AEEF"/>
-  <text x="80" y="105" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">📢</text>
-  
-  <rect x="130" y="70" width="150" height="60" fill="white" rx="5"/>
-  <text x="140" y="90" font-family="Arial, sans-serif" font-size="12" fill="#0033A0">New Partnership</text>
-  <text x="140" y="105" font-family="Arial, sans-serif" font-size="10" fill="#666">Expanding our reach</text>
-  <text x="140" y="120" font-family="Arial, sans-serif" font-size="10" fill="#666">and capabilities</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0033A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5 6 6 0 0 1 6-5c2.21 0 4 1.79 4 4v1"></path><path d="M12 18v5"></path><path d="M16 17.97c2.5-.5 4-2.57 4-5.07V9c0-2.21-1.79-4-4-4S8 6.79 8 9v3.9c0 2.5 1.5 4.57 4 5.07"></path></svg>

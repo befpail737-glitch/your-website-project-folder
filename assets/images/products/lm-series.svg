@@ -1,25 +1,5 @@
-<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="150" fill="#f4f4f4"/>
-  
-  <!-- Power supply unit -->
-  <rect x="30" y="40" width="140" height="70" fill="#0033A0" rx="5"/>
-  <rect x="35" y="45" width="130" height="60" fill="#333" rx="3"/>
-  
-  <!-- Front panel -->
-  <rect x="40" y="50" width="120" height="50" fill="#666"/>
-  <rect x="45" y="55" width="20" height="10" fill="#FFC72C"/>
-  <rect x="45" y="70" width="50" height="8" fill="#00AEEF"/>
-  <rect x="45" y="82" width="30" height="8" fill="#00AEEF"/>
-  
-  <!-- Terminals -->
-  <circle cx="130" cy="60" r="3" fill="#FFC72C"/>
-  <circle cx="140" cy="60" r="3" fill="#FFC72C"/>
-  <circle cx="150" cy="60" r="3" fill="silver"/>
-  <circle cx="130" cy="80" r="3" fill="silver"/>
-  <circle cx="140" cy="80" r="3" fill="silver"/>
-  <circle cx="150" cy="80" r="3" fill="silver"/>
-  
-  <!-- Label -->
-  <text x="100" y="125" font-family="Arial, sans-serif" font-size="14" fill="#0033A0" text-anchor="middle" font-weight="bold">LM Series</text>
-  <text x="100" y="140" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">AC/DC Power Supply</text>
-</svg>
+<!-- k78-series.svg --><svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">K78 Series Image</text></svg>
+<!-- lm-series.svg --><svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">LM Series Image</text></svg>
+<!-- lof-series.svg --><svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">LOF Series Image</text></svg>
+<!-- td-can-series.svg --><svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">TD-CAN Series Image</text></svg>
+<!-- urb-series.svg --><svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">URB Series Image</text></svg>
