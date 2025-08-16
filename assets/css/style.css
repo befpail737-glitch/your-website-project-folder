@@ -771,6 +771,129 @@ a:hover {
     font-size: 14px;
 }
 
+/* About Contact Section */
+.about-contact-section {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.contact-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-method-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.contact-method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.contact-method-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.contact-method-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+.contact-method-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.contact-method-content p {
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.contact-method-link {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.contact-method-link:hover {
+    text-decoration: underline;
+}
+
+.contact-method-hours {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+.contact-method-address {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.contact-method-feature {
+    display: block;
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.contact-method-cta {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.contact-method-cta:hover {
+    text-decoration: underline;
+}
+
+.contact-quick-actions {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modern-btn.secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.modern-btn.secondary:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
 /* Map Section */
 .map-section {
     padding: 60px 0;
@@ -872,5 +995,20 @@ a:hover {
     .modern-card-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    .contact-methods-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .contact-quick-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-quick-actions .modern-btn {
+        width: 100%;
+        max-width: 300px;
     }
 }
