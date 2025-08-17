@@ -1,1 +1,353 @@
-<!DOCTYPE html><html lang="en"><head><title>BMS Power Solution | MORNSUN Distributor</title><!-- ... meta tags ... --><link rel="stylesheet" href="../assets/css/style.css"></head><body><header class="main-header">...</header><main><div class="page-header"><div class="container"><nav class="breadcrumbs"><a href="../index.html">Home</a> &gt; <a href="index.html">Solutions</a> &gt; <span>BMS Power</span></nav><h1>Solution: Battery Management Systems (BMS)</h1></div></div><article class="solution-detail-layout container">...</article></main><footer class="main-footer">...</footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>EMC Design Tips for Power Supplies | LiTong Technical Support</title>
+    <meta name="description" content="Learn essential EMC design techniques for power supplies including filtering, layout guidelines, and common pitfalls to avoid. Expert tips from our FAE team.">
+    
+    <!-- Article Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "EMC Design Tips for Power Supplies: A Practical Guide",
+      "image": "https://www.yourdomain.com/assets/images/content/emc-design.svg",
+      "author": {
+        "@type": "Person",
+        "name": "LiTong FAE Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong Power",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yourdomain.com/assets/images/logo.svg"
+        }
+      },
+      "datePublished": "2025-01-10",
+      "dateModified": "2025-01-10"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo.svg" alt="LiTong Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/">Products</a></li>
+                    <li><a href="../solutions/">Solutions</a></li>
+                    <li><a href="#" class="active">Technical Support</a></li>
+                    <li><a href="../news/">News</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Modern Page Header -->
+        <div class="modern-page-header">
+            <div class="container">
+                <nav class="modern-breadcrumbs">
+                    <a href="../index.html">Home</a> › <a href="index.html">Support</a> › <span>EMC Design Tips</span>
+                </nav>
+                <div class="modern-article-header">
+                    <div class="article-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">📅</span>
+                            <span>January 10, 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">👤</span>
+                            <span>LiTong FAE Team</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">⏱️</span>
+                            <span>12 min read</span>
+                        </div>
+                    </div>
+                    <h1>EMC Design Tips for Power Supplies: A Practical Guide</h1>
+                    <div class="article-tags">
+                        <a href="#" class="tag">EMC</a>
+                        <a href="#" class="tag">Design Tips</a>
+                        <a href="#" class="tag">Power Supply</a>
+                        <a href="#" class="tag">Technical Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="modern-article-layout">
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">📡</div>
+                    <h2>Understanding EMC Fundamentals</h2>
+                </div>
+                <p>Electromagnetic Compatibility (EMC) is critical for modern power supply design. As switching frequencies increase and power densities grow, managing electromagnetic interference (EMI) becomes increasingly challenging. This comprehensive guide provides practical design techniques to achieve EMC compliance while maintaining optimal performance.</p>
+                
+                <div class="highlight-box">
+                    <h3>Key EMC Standards for Power Supplies</h3>
+                    <ul class="modern-list">
+                        <li><strong>CISPR 32:</strong> Conducted and radiated emissions for multimedia equipment</li>
+                        <li><strong>EN 55032:</strong> European equivalent to CISPR 32</li>
+                        <li><strong>FCC Part 15:</strong> US regulations for unintentional radiators</li>
+                        <li><strong>IEC 61000-4-x:</strong> Immunity test standards</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">🔧</div>
+                    <h2>Input Filtering Design</h2>
+                </div>
+                
+                <h3>Common Mode vs. Differential Mode Filtering</h3>
+                <p>Understanding the difference between common mode and differential mode noise is essential for effective filtering:</p>
+                
+                <div class="modern-table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Noise Type</th>
+                                <th>Characteristics</th>
+                                <th>Filtering Approach</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Differential Mode</td>
+                                <td>Between power lines (L-N)</td>
+                                <td>X-capacitors, differential inductors</td>
+                            </tr>
+                            <tr>
+                                <td>Common Mode</td>
+                                <td>Both lines to ground</td>
+                                <td>Y-capacitors, common mode chokes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Filter Component Selection</h3>
+                <ul class="modern-list">
+                    <li><strong>X-Capacitors:</strong> Use X2-rated capacitors (typically 100nF-1μF) across line and neutral</li>
+                    <li><strong>Y-Capacitors:</strong> Select Y2-rated capacitors (1nF-10nF) for line-to-ground filtering</li>
+                    <li><strong>Common Mode Chokes:</strong> Choose based on impedance characteristics and saturation current</li>
+                    <li><strong>Differential Inductors:</strong> Consider both impedance and DC resistance</li>
+                </ul>
+            </div>
+
+            <div class="media-section">
+                <img src="../assets/images/content/emc-design.svg" alt="EMC Filter Circuit Diagram" class="modern-image">
+                <p class="image-caption">Typical input EMC filter circuit showing both common mode and differential mode components</p>
+            </div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">📐</div>
+                    <h2>PCB Layout Guidelines</h2>
+                </div>
+                
+                <h3>Critical Layout Principles</h3>
+                <ul class="modern-list">
+                    <li><strong>Minimize Loop Areas:</strong> Keep high-frequency current loops as small as possible</li>
+                    <li><strong>Ground Plane Design:</strong> Use solid ground planes with minimal splits</li>
+                    <li><strong>Component Placement:</strong> Position noisy switching components away from sensitive circuits</li>
+                    <li><strong>Via Placement:</strong> Use multiple vias for high-current paths to reduce inductance</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>High-Speed Switching Node Layout</h3>
+                    <p>The switching node (connection between switch, diode, and inductor) is the most critical area for EMI generation. Key guidelines:</p>
+                    <ul class="modern-list">
+                        <li>Keep traces as short and wide as possible</li>
+                        <li>Avoid sharp corners and use smooth curves</li>
+                        <li>Provide adequate copper pour for heat dissipation</li>
+                        <li>Place bypass capacitors as close as possible to switching devices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">🛡️</div>
+                    <h2>Shielding and Enclosure Design</h2>
+                </div>
+                
+                <h3>Effective Shielding Techniques</h3>
+                <p>Proper shielding can significantly reduce radiated emissions:</p>
+                
+                <ul class="modern-list">
+                    <li><strong>Magnetic Shielding:</strong> Use high-permeability materials (μ-metal) for low-frequency magnetic fields</li>
+                    <li><strong>Electric Shielding:</strong> Employ conductive enclosures connected to ground for electric fields</li>
+                    <li><strong>Gasket Selection:</strong> Choose appropriate EMI gaskets for enclosure seams</li>
+                    <li><strong>Cable Entry:</strong> Use filtered connectors or ferrite beads on cables</li>
+                </ul>
+
+                <h3>Enclosure Grounding</h3>
+                <p>Proper grounding of the metal enclosure is crucial:</p>
+                <ul class="modern-list">
+                    <li>Establish low-impedance connection between PCB ground and enclosure</li>
+                    <li>Use star grounding topology where possible</li>
+                    <li>Minimize ground loop formation</li>
+                    <li>Consider frequency-dependent grounding strategies</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">⚠️</div>
+                    <h2>Common EMC Design Pitfalls</h2>
+                </div>
+                
+                <div class="modern-table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Pitfall</th>
+                                <th>Impact</th>
+                                <th>Solution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Poor bypass capacitor placement</td>
+                                <td>Increased high-frequency noise</td>
+                                <td>Place capacitors within 5mm of IC power pins</td>
+                            </tr>
+                            <tr>
+                                <td>Split ground planes</td>
+                                <td>Ground current loops, increased EMI</td>
+                                <td>Use solid ground planes with careful partitioning</td>
+                            </tr>
+                            <tr>
+                                <td>Long switching node traces</td>
+                                <td>Antenna effect, radiated emissions</td>
+                                <td>Minimize trace length, add ground plane underneath</td>
+                            </tr>
+                            <tr>
+                                <td>Inadequate filter design</td>
+                                <td>Conducted emissions failure</td>
+                                <td>Properly balance CM and DM filtering</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">🧪</div>
+                    <h2>Testing and Validation</h2>
+                </div>
+                
+                <h3>Pre-Compliance Testing</h3>
+                <p>Perform initial EMC testing early in the design phase:</p>
+                <ul class="modern-list">
+                    <li><strong>Near-Field Probing:</strong> Use near-field probes to identify emission sources</li>
+                    <li><strong>Spectrum Analysis:</strong> Monitor conducted emissions during development</li>
+                    <li><strong>Current Probe Testing:</strong> Measure common mode currents on cables</li>
+                    <li><strong>TEM Cell Testing:</strong> Quick assessment of radiated emissions</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>Test Setup Considerations</h3>
+                    <ul class="modern-list">
+                        <li>Use proper test fixtures and cables</li>
+                        <li>Ensure adequate warm-up time for stable readings</li>
+                        <li>Test under worst-case operating conditions</li>
+                        <li>Document all test configurations and settings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modern-cta-section">
+                <h3>Need EMC Design Assistance?</h3>
+                <p>Our FAE team has extensive experience helping customers achieve EMC compliance. Contact us for personalized design support.</p>
+                <div class="cta-buttons">
+                    <a href="../contact.html" class="cta-btn">Contact FAE Team</a>
+                    <a href="../products/" class="cta-btn secondary">Browse EMC Solutions</a>
+                </div>
+            </div>
+
+            <!-- Related Articles -->
+            <div class="related-content-grid">
+                <div class="related-card">
+                    <div class="related-card-image">🌡️</div>
+                    <div class="related-card-content">
+                        <h4>Thermal Management Basics</h4>
+                        <p>Essential techniques for managing heat in power supply designs.</p>
+                        <a href="thermal-management.html" class="read-more-btn">Read More →</a>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="related-card-image">🔧</div>
+                    <div class="related-card-content">
+                        <h4>Troubleshooting Guide</h4>
+                        <p>Common power supply problems and their solutions.</p>
+                        <a href="troubleshooting-guide.html" class="read-more-btn">Read More →</a>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="related-card-image">📊</div>
+                    <div class="related-card-content">
+                        <h4>Understanding Derating</h4>
+                        <p>How to properly derate power supplies for reliability.</p>
+                        <a href="understanding-derating.html" class="read-more-btn">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>About LiTong</h4>
+                    <p>Your trusted MORNSUN authorized distributor providing power solutions with engineering expertise.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../products/">Products</a></li>
+                        <li><a href="../solutions/">Solutions</a></li>
+                        <li><a href="../support/">Support</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="../support/">Technical Support</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@litong-power.com<br>Phone: +1-555-MORNSUN</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Power. All Rights Reserved.</p>
+                <p><strong>LiTong Power - MORNSUN Official Authorized Tier 1 Distributor</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
