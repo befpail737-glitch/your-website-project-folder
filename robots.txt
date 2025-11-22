@@ -1,0 +1,27 @@
+# Robots.txt for mornsun.elec-distributor.com
+# Generated on 2025-01-23
+
+User-agent: *
+Allow: /
+
+# Allow all major search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Crawl delay to avoid overloading the server
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://mornsun.elec-distributor.com/sitemap.xml
