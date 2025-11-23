@@ -1,0 +1,27 @@
+# Cloudflare Pages Redirects Configuration
+# Ensure static files are served directly, not redirected to index.html
+
+# Static files - serve directly with 200 status
+/sitemap.xml       /sitemap.xml       200
+/sitemap.xsl       /sitemap.xsl       200
+/robots.txt        /robots.txt        200
+
+# Asset directories - serve directly
+/assets/*          /assets/:splat     200
+/css/*             /css/:splat        200
+/js/*              /js/:splat         200
+/images/*          /images/:splat     200
+
+# HTML pages in subdirectories - serve directly
+/products/*        /products/:splat   200
+/solutions/*       /solutions/:splat  200
+/support/*         /support/:splat    200
+/news/*            /news/:splat       200
+
+# Root HTML files - serve directly
+/about.html        /about.html        200
+/contact.html      /contact.html      200
+/faq.html          /faq.html          200
+
+# Fallback for SPA (must be last)
+/*                 /index.html        200
