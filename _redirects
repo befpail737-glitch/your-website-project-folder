@@ -6,6 +6,11 @@
 /sitemap.xsl       /sitemap.xsl       200
 /robots.txt        /robots.txt        200
 
+# Redirect URLs with trailing slashes to correct versions
+/sitemap.xml/      /sitemap.xml       301
+/sitemap.xsl/      /sitemap.xsl       301
+/robots.txt/       /robots.txt        301
+
 # Asset directories - serve directly
 /assets/*          /assets/:splat     200
 /css/*             /css/:splat        200
