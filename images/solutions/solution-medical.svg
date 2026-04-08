@@ -1,0 +1,50 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f8f8"/>
+  
+  <!-- Medical equipment -->
+  <rect x="80" y="80" width="100" height="120" fill="white" stroke="#0033A0" stroke-width="3" rx="10"/>
+  
+  <!-- Monitor screen -->
+  <rect x="90" y="90" width="80" height="50" fill="#333"/>
+  <rect x="95" y="95" width="70" height="40" fill="#00AEEF"/>
+  
+  <!-- Heart rate line -->
+  <polyline points="100,115 110,115 115,105 120,125 125,115 135,115 140,105 145,125 150,115 160,115" 
+            stroke="red" stroke-width="2" fill="none"/>
+  
+  <!-- Control buttons -->
+  <circle cx="100" cy="160" r="6" fill="#FFC72C"/>
+  <circle cx="120" cy="160" r="6" fill="green"/>
+  <circle cx="140" cy="160" r="6" fill="red"/>
+  <circle cx="160" cy="160" r="6" fill="#00AEEF"/>
+  
+  <!-- Power supply unit -->
+  <rect x="220" y="100" width="80" height="60" fill="#0033A0"/>
+  <rect x="225" y="105" width="70" height="50" fill="#333"/>
+  
+  <!-- Medical grade indicators -->
+  <rect x="230" y="110" width="20" height="8" fill="#FFC72C"/>
+  <text x="240" y="125" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">2xMOPP</text>
+  
+  <rect x="255" y="110" width="20" height="8" fill="green"/>
+  <text x="265" y="125" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">IEC</text>
+  
+  <rect x="280" y="110" width="15" height="8" fill="#00AEEF"/>
+  <text x="287" y="125" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">UL</text>
+  
+  <!-- Connection -->
+  <line x1="180" y1="130" x2="220" y2="130" stroke="#FFC72C" stroke-width="3"/>
+  
+  <!-- Safety symbols -->
+  <circle cx="130" cy="220" r="20" fill="white" stroke="#0033A0" stroke-width="2"/>
+  <text x="130" y="226" font-family="Arial, sans-serif" font-size="16" fill="#0033A0" text-anchor="middle">⚕</text>
+  
+  <circle cx="200" cy="220" r="20" fill="white" stroke="red" stroke-width="2"/>
+  <text x="200" y="226" font-family="Arial, sans-serif" font-size="16" fill="red" text-anchor="middle">⚡</text>
+  
+  <circle cx="270" cy="220" r="20" fill="white" stroke="green" stroke-width="2"/>
+  <text x="270" y="226" font-family="Arial, sans-serif" font-size="16" fill="green" text-anchor="middle">✓</text>
+  
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="16" fill="#0033A0" text-anchor="middle" font-weight="bold">Medical Equipment Power</text>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Safety Certified Solutions</text>
+</svg>

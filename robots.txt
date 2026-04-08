@@ -1,0 +1,89 @@
+# Mornsun Distributor - Robots.txt
+# Optimized for Global SEO with 13 Country Targeting
+# Last Updated: 2026-04-08
+
+# Allow all search engine crawlers
+User-agent: *
+
+# Core Pages - High Priority
+Allow: /
+Allow: /index.html
+Allow: /faq.html
+Allow: /case-studies/
+Allow: /technical-resources/
+
+# Country Pages - GEO SEO Targeting (13 Countries)
+Allow: /usa/
+Allow: /germany/
+Allow: /india/
+Allow: /japan/
+Allow: /korea/
+Allow: /vietnam/
+Allow: /malaysia/
+Allow: /mexico/
+Allow: /france/
+Allow: /italy/
+Allow: /poland/
+Allow: /turkey/
+Allow: /brazil/
+
+# Static Assets
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# Block Non-Essential Directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /test/
+Disallow: /draft/
+
+# Block Specific File Types
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+
+# Block Query Parameters (Prevent Duplicate Content)
+Disallow: /*?*
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?page=
+Disallow: /*?search=
+
+# Crawl Rate Optimization
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Baidu Spider (China)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# Yandex (Russia/CIS)
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Naver (Korea)
+User-agent: Yeti
+Allow: /
+Crawl-delay: 2
+
+# Sitemap Location
+Sitemap: https://mornsun.elec-distributor.com/sitemap.xml
+
+# Host Directive (Primary Domain)
+Host: https://mornsun.elec-distributor.com

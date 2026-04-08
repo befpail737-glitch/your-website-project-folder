@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f0ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="machineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0033A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00AEEF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="240" fill="url(#bg)"/>
+  
+  <!-- Industrial Machine/PLC -->
+  <g transform="translate(60,60)">
+    <!-- Main body -->
+    <rect x="0" y="40" width="80" height="60" fill="url(#machineGradient)" rx="4"/>
+    <!-- Control panel -->
+    <rect x="10" y="50" width="25" height="20" fill="#333" rx="2"/>
+    <rect x="12" y="52" width="21" height="6" fill="#FFC72C"/>
+    <text x="22" y="64" text-anchor="middle" font-size="6" fill="#ffffff">PLC</text>
+    <!-- Status lights -->
+    <circle cx="45" cy="55" r="3" fill="#00ff00"/>
+    <circle cx="55" cy="55" r="3" fill="#FFC72C"/>
+    <circle cx="65" cy="55" r="3" fill="#ff4444"/>
+    <!-- Ports -->
+    <rect x="45" y="75" width="6" height="4" fill="#666"/>
+    <rect x="55" y="75" width="6" height="4" fill="#666"/>
+    <rect x="65" y="75" width="6" height="4" fill="#666"/>
+    <!-- Power module -->
+    <rect x="5" y="85" width="15" height="12" fill="#FFC72C"/>
+    <text x="12" y="93" text-anchor="middle" font-size="5" fill="#0033A0">PWR</text>
+  </g>
+  
+  <!-- Robotic Arm -->
+  <g transform="translate(200,50)">
+    <!-- Base -->
+    <rect x="0" y="70" width="30" height="20" fill="#0033A0" rx="3"/>
+    <!-- Arm segments -->
+    <rect x="10" y="50" width="10" height="25" fill="#00AEEF" rx="2"/>
+    <rect x="8" y="40" width="14" height="15" fill="#0033A0" rx="2"/>
+    <!-- End effector -->
+    <rect x="12" y="35" width="6" height="8" fill="#FFC72C" rx="1"/>
+    <!-- Joints -->
+    <circle cx="15" cy="65" r="4" fill="#333"/>
+    <circle cx="15" cy="45" r="3" fill="#333"/>
+    <!-- Motion lines -->
+    <path d="M25 35 Q35 30 40 35" stroke="#00AEEF" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M25 40 Q35 35 40 40" stroke="#00AEEF" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Conveyor Belt -->
+  <g transform="translate(50,140)">
+    <!-- Belt -->
+    <rect x="0" y="0" width="200" height="15" fill="#666" rx="7"/>
+    <!-- Belt pattern -->
+    <rect x="10" y="3" width="8" height="9" fill="#888"/>
+    <rect x="30" y="3" width="8" height="9" fill="#888"/>
+    <rect x="50" y="3" width="8" height="9" fill="#888"/>
+    <rect x="70" y="3" width="8" height="9" fill="#888"/>
+    <rect x="90" y="3" width="8" height="9" fill="#888"/>
+    <rect x="110" y="3" width="8" height="9" fill="#888"/>
+    <rect x="130" y="3" width="8" height="9" fill="#888"/>
+    <rect x="150" y="3" width="8" height="9" fill="#888"/>
+    <rect x="170" y="3" width="8" height="9" fill="#888"/>
+    <!-- Rollers -->
+    <circle cx="7" cy="7" r="7" fill="#333"/>
+    <circle cx="193" cy="7" r="7" fill="#333"/>
+    <!-- Motion arrows -->
+    <path d="M220 7 L240 7 M235 3 L240 7 L235 11" stroke="#FFC72C" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Sensors -->
+  <g transform="translate(300,80)">
+    <!-- Sensor 1 -->
+    <rect x="0" y="0" width="12" height="8" fill="#0033A0" rx="2"/>
+    <circle cx="6" cy="4" r="2" fill="#FFC72C"/>
+    <!-- Sensor beam -->
+    <path d="M6 8 L6 25" stroke="#ff4444" stroke-width="2" stroke-dasharray="2,2"/>
+    <!-- Sensor 2 -->
+    <rect x="20" y="15" width="12" height="8" fill="#0033A0" rx="2"/>
+    <circle cx="26" cy="19" r="2" fill="#00ff00"/>
+  </g>
+  
+  <!-- Data flow lines -->
+  <g opacity="0.5">
+    <path d="M140 80 Q170 70 200 75" stroke="#00AEEF" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+    <path d="M280 80 Q250 85 230 80" stroke="#00AEEF" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#0033A0">Industrial Control</text>
+  <text x="200" y="220" text-anchor="middle" font-size="12" fill="#666">Reliable power for automation systems</text>
+</svg>

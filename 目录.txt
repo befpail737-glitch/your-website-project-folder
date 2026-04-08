@@ -1,0 +1,69 @@
+.
+└── your-website-project-folder/
+    ├── index.html                           (1. 首页)
+    ├── about.html                           (2. 关于我们)
+    ├── contact.html                         (3. 联系我们)
+    ├── faq.html                             (4. 常见问题)
+    ├── products/                            (产品中心目录)
+    │   ├── index.html                       (5. 产品列表页)
+    │   ├── lm75-20b24.html                  (6. 产品详情页 1)
+    │   ├── urb2405ymd-6wr3.html             (7. 产品详情页 2)
+    │   ├── k7805-500r3.html                 (8. 产品详情页 3)
+    │   ├── td501dcan.html                   (9. 产品详情页 4)
+    │   └── lof450-20bxx.html                (10. 产品详情页 5)
+    ├── solutions/                           (解决方案目录)
+    │   ├── index.html                       (11. 解决方案列表页)
+    │   ├── ev-charging-station.html         (12. 解决方案详情页 1)
+    │   ├── industrial-control.html          (13. 解决方案详情页 2)
+    │   ├── medical-equipment.html           (14. 解决方案详情页 3)
+    │   ├── smart-grid.html                  (15. 解决方案详情页 4)
+    │   └── bms-power.html                   (16. 解决方案详情页 5)
+    ├── support/                             (技术支持目录)
+    │   ├── index.html                       (17. 技术支持列表页)
+    │   ├── select-mornsun-ac-dc.html        (18. 技术文章详情页 1)
+    │   ├── emc-design-tips.html             (19. 技术文章详情页 2)
+    │   ├── understanding-derating.html      (20. 技术文章详情页 3)
+    │   ├── thermal-management.html          (21. 技术文章详情页 4)
+    │   └── troubleshooting-guide.html       (22. 技术文章详情页 5)
+    ├── news/                                (新闻中心目录)
+    │   ├── index.html                       (23. 新闻列表页)
+    │   ├── how-to-choose-distributor.html   (24. 新闻详情页 1)
+    │   ├── 5-advantages-of-authorized.html  (25. 新闻详情页 2)
+    │   ├── litong-expands-warehouse.html    (26. 新闻详情页 3)
+    │   ├── mornsun-releases-new-modules.html(27. 新闻详情页 4)
+    │   └── industry-trends-2025.html        (28. 新闻详情页 5)
+    └── assets/                              (资源目录)
+        ├── css/
+        │   └── style.css                    (29. 全局CSS样式表)
+        ├── js/
+        │   └── main.js                      (30. 全局JavaScript文件)
+        └── images/                          (图片资源目录)
+            ├── logo.svg
+            ├── icons/
+            │   ├── icon-authenticity.svg
+            │   ├── icon-pricing.svg
+            │   ├── icon-stock.svg
+            │   └── icon-support.svg
+            ├── authors/
+            │   └── john-doe.svg
+            ├── company/
+            │   ├── certificate.svg
+            │   ├── team-photo.svg
+            │   └── warehouse.svg
+            ├── content/
+            │   ├── company-update.svg
+            │   ├── emc-design.svg
+            │   ├── industry-trends.svg
+            │   └── tech-guide.svg
+            ├── products/
+            │   ├── k78-series.svg
+            │   ├── lm-series.svg
+            │   ├── lof-series.svg
+            │   ├── td-can-series.svg
+            │   └── urb-series.svg
+            └── solutions/
+                ├── block-diagram-ev.svg
+                ├── solution-bms.svg
+                ├── solution-ev-banner.svg
+                ├── solution-industrial.svg
+                └── solution-medical.svg

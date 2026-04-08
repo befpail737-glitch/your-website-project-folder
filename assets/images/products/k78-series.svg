@@ -1,0 +1,7 @@
+
+**File: `assets/images/content/*.svg` (4 files)**
+```xml
+<!-- company-update.svg --><svg width="400" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">Company Update Image</text></svg>
+<!-- emc-design.svg --><svg width="400" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">EMC Design Image</text></svg>
+<!-- industry-trends.svg --><svg width="400" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">Industry Trends Image</text></svg>
+<!-- tech-guide.svg --><svg width="400" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180"><rect width="100%" height="100%" fill="#ccc" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">Tech Guide Image</text></svg>

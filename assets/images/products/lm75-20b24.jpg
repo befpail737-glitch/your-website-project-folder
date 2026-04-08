@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="moduleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0033A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00AEEF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="500" height="400" fill="url(#bg)"/>
+  
+  <!-- Main Product Module -->
+  <g transform="translate(150,100)">
+    <!-- Module housing -->
+    <rect x="0" y="0" width="200" height="120" fill="url(#moduleGradient)" rx="8" stroke="#002a80" stroke-width="2"/>
+    
+    <!-- Product label -->
+    <rect x="15" y="15" width="170" height="25" fill="#ffffff" rx="3"/>
+    <text x="100" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#0033A0">MORNSUN LM75-20B24</text>
+    
+    <!-- Screw holes -->
+    <circle cx="20" cy="20" r="3" fill="#666"/>
+    <circle cx="180" cy="20" r="3" fill="#666"/>
+    <circle cx="20" cy="100" r="3" fill="#666"/>
+    <circle cx="180" cy="100" r="3" fill="#666"/>
+    
+    <!-- Input terminals -->
+    <g fill="#FFC72C" stroke="#b8860b" stroke-width="1">
+      <rect x="-5" y="40" width="10" height="8" rx="1"/>
+      <rect x="-5" y="52" width="10" height="8" rx="1"/>
+      <rect x="-5" y="64" width="10" height="8" rx="1"/>
+    </g>
+    
+    <!-- Output terminals -->
+    <g fill="#FFC72C" stroke="#b8860b" stroke-width="1">
+      <rect x="195" y="40" width="10" height="8" rx="1"/>
+      <rect x="195" y="52" width="10" height="8" rx="1"/>
+      <rect x="195" y="64" width="10" height="8" rx="1"/>
+    </g>
+    
+    <!-- Terminal labels -->
+    <text x="15" y="35" font-size="8" fill="#ffffff">L</text>
+    <text x="15" y="47" font-size="8" fill="#ffffff">N</text>
+    <text x="15" y="59" font-size="8" fill="#ffffff">⏚</text>
+    
+    <text x="175" y="35" font-size="8" fill="#ffffff">+</text>
+    <text x="175" y="47" font-size="8" fill="#ffffff">-</text>
+    <text x="175" y="59" font-size="8" fill="#ffffff">ADJ</text>
+    
+    <!-- Internal components visualization -->
+    <g opacity="0.3">
+      <rect x="30" y="50" width="25" height="20" fill="#333" rx="2"/>
+      <rect x="60" y="50" width="15" height="20" fill="#666" rx="1"/>
+      <rect x="80" y="50" width="20" height="20" fill="#333" rx="2"/>
+      <rect x="105" y="50" width="25" height="20" fill="#666" rx="2"/>
+      <rect x="135" y="50" width="20" height="20" fill="#333" rx="1"/>
+      <rect x="160" y="50" width="15" height="20" fill="#666" rx="1"/>
+    </g>
+    
+    <!-- Heat dissipation fins -->
+    <g fill="#888" opacity="0.7">
+      <rect x="20" y="85" width="160" height="4"/>
+      <rect x="25" y="89" width="2" height="8"/>
+      <rect x="30" y="89" width="2" height="8"/>
+      <rect x="35" y="89" width="2" height="8"/>
+      <rect x="40" y="89" width="2" height="8"/>
+      <rect x="45" y="89" width="2" height="8"/>
+      <rect x="50" y="89" width="2" height="8"/>
+      <rect x="55" y="89" width="2" height="8"/>
+      <rect x="60" y="89" width="2" height="8"/>
+      <rect x="65" y="89" width="2" height="8"/>
+      <rect x="70" y="89" width="2" height="8"/>
+      <rect x="75" y="89" width="2" height="8"/>
+      <rect x="80" y="89" width="2" height="8"/>
+      <rect x="85" y="89" width="2" height="8"/>
+      <rect x="90" y="89" width="2" height="8"/>
+      <rect x="95" y="89" width="2" height="8"/>
+      <rect x="100" y="89" width="2" height="8"/>
+      <rect x="105" y="89" width="2" height="8"/>
+      <rect x="110" y="89" width="2" height="8"/>
+      <rect x="115" y="89" width="2" height="8"/>
+      <rect x="120" y="89" width="2" height="8"/>
+      <rect x="125" y="89" width="2" height="8"/>
+      <rect x="130" y="89" width="2" height="8"/>
+      <rect x="135" y="89" width="2" height="8"/>
+      <rect x="140" y="89" width="2" height="8"/>
+      <rect x="145" y="89" width="2" height="8"/>
+      <rect x="150" y="89" width="2" height="8"/>
+      <rect x="155" y="89" width="2" height="8"/>
+      <rect x="160" y="89" width="2" height="8"/>
+      <rect x="165" y="89" width="2" height="8"/>
+      <rect x="170" y="89" width="2" height="8"/>
+      <rect x="175" y="89" width="2" height="8"/>
+    </g>
+    
+    <!-- Status LED -->
+    <circle cx="170" cy="25" r="4" fill="#00ff00" opacity="0.8"/>
+    <text x="155" y="18" font-size="6" fill="#ffffff">PWR</text>
+    
+    <!-- DIN Rail mounting -->
+    <rect x="80" y="125" width="40" height="8" fill="#888" rx="4"/>
+    <rect x="85" y="133" width="30" height="4" fill="#666" rx="2"/>
+  </g>
+  
+  <!-- Specifications overlay -->
+  <g transform="translate(50,300)">
+    <rect x="0" y="0" width="400" height="80" fill="#ffffff" stroke="#ddd" stroke-width="1" rx="5" opacity="0.95"/>
+    <text x="20" y="20" font-size="14" font-weight="bold" fill="#0033A0">LM75-20B24 Specifications</text>
+    <text x="20" y="40" font-size="11" fill="#333">• Output: 24V DC, 75W • Input: 85-264VAC Universal</text>
+    <text x="20" y="55" font-size="11" fill="#333">• Efficiency: 90% • Operating Temp: -30°C to +70°C</text>
+    <text x="20" y="70" font-size="11" fill="#333">• Dimensions: 99.0 × 82.0 × 30.0 mm • EMC: Class B</text>
+  </g>
+  
+  <!-- MORNSUN Logo area -->
+  <g transform="translate(380,50)">
+    <rect x="0" y="0" width="80" height="30" fill="#0033A0" rx="3"/>
+    <text x="40" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">MORNSUN</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f4f4f4"/>
+  <rect x="0" y="0" width="300" height="40" fill="#0033A0"/>
+  <text x="150" y="25" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Company Update</text>
+  
+  <circle cx="80" cy="100" r="30" fill="#00AEEF"/>
+  <text x="80" y="105" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">📢</text>
+  
+  <rect x="130" y="70" width="150" height="60" fill="white" rx="5"/>
+  <text x="140" y="90" font-family="Arial, sans-serif" font-size="12" fill="#0033A0">New Partnership</text>
+  <text x="140" y="105" font-family="Arial, sans-serif" font-size="10" fill="#666">Expanding our reach</text>
+  <text x="140" y="120" font-family="Arial, sans-serif" font-size="10" fill="#666">and capabilities</text>
+</svg>

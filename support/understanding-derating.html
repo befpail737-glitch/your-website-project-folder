@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Understanding Power Supply Derating Curves | LiTong Technical Support</title>
+    <meta name="description" content="Learn how to properly apply derating curves to ensure reliable power supply operation. Essential guidance for designing robust power systems with MORNSUN modules.">
+    
+    <!-- Article Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechnicalArticle",
+      "headline": "Understanding Power Supply Derating Curves",
+      "image": "https://mornsun.elec-distributor.com/assets/images/content/derating-curves.svg",
+      "author": {
+        "@type": "Person",
+        "name": "John Doe, Senior FAE"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong Power",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mornsun.elec-distributor.com/assets/images/logo.svg"
+        }
+      },
+      "datePublished": "2025-01-12",
+      "dateModified": "2025-01-12"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo.svg" alt="LiTong Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/">Products</a></li>
+                    <li><a href="../solutions/">Solutions</a></li>
+                    <li><a href="#" class="active">Technical Support</a></li>
+                    <li><a href="../news/">News</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Technical Article Hero -->
+        <section class="news-article-hero">
+            <div class="news-article-container">
+                <div class="news-hero-content">
+                    <nav class="modern-breadcrumbs">
+                        <a href="../index.html">Home</a> › <a href="index.html">Technical Support</a> › <span>Understanding Derating Curves</span>
+                    </nav>
+                    
+                    <div class="news-category-badge">Technical Guide</div>
+                    
+                    <h1 class="news-article-title">Understanding Power Supply Derating Curves</h1>
+                    
+                    <p class="news-article-subtitle">Essential principles for reliable power supply operation under varying conditions</p>
+                    
+                    <div class="news-meta-info">
+                        <div class="news-meta-item">
+                            <div class="news-author-avatar">JD</div>
+                            <span>John Doe, Senior FAE</span>
+                        </div>
+                        <div class="news-meta-item">
+                            <span class="news-meta-icon">📅</span>
+                            <span>August 12, 2025</span>
+                        </div>
+                        <div class="news-meta-item">
+                            <span class="news-meta-icon">⏱️</span>
+                            <span>8 min read</span>
+                        </div>
+                        <div class="news-meta-item">
+                            <span class="news-meta-icon">🏷️</span>
+                            <span>Reliability Guide</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Content Wrapper -->
+        <div class="news-content-wrapper">
+            <div class="news-article-container">
+                
+                <!-- Overview Module -->
+                <article class="news-content-module">
+                    <div class="news-module-header">
+                        <div class="news-module-icon">⚠️</div>
+                        <div class="news-module-title">
+                            <h2>Critical Design Principle</h2>
+                            <p class="news-module-description">Why proper derating is essential for reliable power supply operation</p>
+                        </div>
+                    </div>
+                    
+                    <p>One of the most common causes of premature power supply failure is neglecting to derate. A power supply's maximum output power is not always available under all operating conditions. Derating is the practice of operating a component at less than its maximum rated power to ensure reliability. MORNSUN datasheets provide clear derating curves to guide this process.</p>
+                    
+                    <p>Understanding and properly applying these curves is not optional—it is essential for designing a reliable, long-lasting product. Pushing a power supply to its absolute limits without considering temperature and input voltage variations is a recipe for field failures.</p>
+                    
+                    <div class="news-quote-module">
+                        <p class="news-quote-text">When in doubt, our FAE team can help you interpret derating curves for your specific application. Proper derating today prevents costly field failures tomorrow.</p>
+                        <p class="news-quote-author">— LiTong Technical Support Team</p>
+                    </div>
+                </article>
+
+                <!-- Temperature Derating Module -->
+                <article class="news-content-module">
+                    <div class="news-module-header">
+                        <div class="news-module-icon">🌡️</div>
+                        <div class="news-module-title">
+                            <h2>1. What is Temperature Derating?</h2>
+                            <p class="news-module-description">Understanding thermal limitations and power reduction requirements</p>
+                        </div>
+                    </div>
+                    
+                    <p>As the ambient temperature around a power supply increases, its ability to dissipate its own internal heat decreases. To prevent overheating, the maximum load you can draw from the supply must be reduced. This is shown in the "Temperature Derating Curve."</p>
+                    
+                    <h3>How Temperature Affects Power Output</h3>
+                    <p>Typically, a module like the <a href="../products/lm75-20b24.html" class="highlight-link">LM75-20B24</a> might offer 100% of its rated load up to 50°C. Above that, the curve will show a linear decrease. For example, at 70°C, you might only be able to draw 60% of the maximum load.</p>
+                    
+                    <ul class="news-enhanced-list">
+                        <li><strong>Full Power Range:</strong> Typically available up to 50°C ambient temperature</li>
+                        <li><strong>Linear Derating:</strong> Progressive power reduction above threshold temperature</li>
+                        <li><strong>Critical Temperature:</strong> Maximum operating temperature with minimal load</li>
+                        <li><strong>Design Margin:</strong> Always design for your system's worst-case internal ambient temperature</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h3>Key Design Rule</h3>
+                        <p><strong>Always design for your system's worst-case internal ambient temperature.</strong> The temperature inside your enclosure will typically be higher than room temperature due to heat generated by other components.</p>
+                    </div>
+                </article>
+
+                <!-- Input Voltage Derating Module -->
+                <article class="news-content-module">
+                    <div class="news-module-header">
+                        <div class="news-module-icon">⚡</div>
+                        <div class="news-module-title">
+                            <h2>2. What is Input Voltage Derating?</h2>
+                            <p class="news-module-description">Managing power limitations at low input voltages</p>
+                        </div>
+                    </div>
+                    
+                    <p>Some power supplies, especially wide-input DC/DC converters, may need to be derated at the lower end of their input voltage range. This is because to deliver the same output power with a lower input voltage, the input current must increase (P = V × I). This higher current can cause additional stress and heating on the input-side components.</p>
+                    
+                    <h3>Input Voltage Derating Factors</h3>
+                    <ul class="news-enhanced-list">
+                        <li><strong>Current Stress:</strong> Higher input current at low voltages increases component stress</li>
+                        <li><strong>Thermal Effects:</strong> Additional heating from increased current flow</li>
+                        <li><strong>Efficiency Impact:</strong> Lower efficiency at extreme input voltage ranges</li>
+                        <li><strong>Component Limits:</strong> Input side component ratings may limit maximum current</li>
+                    </ul>
+                    
+                    <p>The "Input Voltage Derating Curve" will show if you need to reduce the maximum output power when operating near the minimum specified input voltage.</p>
+                    
+                    <div class="news-quote-module">
+                        <p class="news-quote-text">Wide-input range converters offer flexibility, but remember that maximum power may not be available across the entire input range. Check the derating curves for your specific operating conditions.</p>
+                        <p class="news-quote-author">— Senior Application Engineer</p>
+                    </div>
+                </article>
+
+                <!-- Practical Application Module -->
+                <article class="news-content-module">
+                    <div class="news-module-header">
+                        <div class="news-module-icon">🔧</div>
+                        <div class="news-module-title">
+                            <h2>Practical Application Examples</h2>
+                            <p class="news-module-description">Real-world scenarios and design calculations</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Example 1: High-Temperature Industrial Application</h3>
+                    <p>Consider a 75W power module in an industrial control cabinet where the internal temperature can reach 65°C:</p>
+                    
+                    <ul class="news-enhanced-list">
+                        <li><strong>Rated Power:</strong> 75W at 25°C ambient</li>
+                        <li><strong>Operating Temperature:</strong> 65°C inside enclosure</li>
+                        <li><strong>Derating Factor:</strong> 70% of rated power at 65°C</li>
+                        <li><strong>Available Power:</strong> 75W × 0.70 = 52.5W maximum</li>
+                    </ul>
+                    
+                    <h3>Example 2: Automotive Application with Wide Input Range</h3>
+                    <p>An automotive DC/DC converter operating from 9V to 36V input, with 24V nominal:</p>
+                    
+                    <ul class="news-enhanced-list">
+                        <li><strong>Normal Operation:</strong> Full power available at 24V input</li>
+                        <li><strong>Cold Cranking:</strong> Input voltage drops to 9V during engine start</li>
+                        <li><strong>Derating Required:</strong> 80% of rated power at 9V input</li>
+                        <li><strong>Design Consideration:</strong> Size power supply for worst-case conditions</li>
+                    </ul>
+                </article>
+
+                <!-- Best Practices Module -->
+                <article class="news-content-module">
+                    <div class="news-module-header">
+                        <div class="news-module-icon">✅</div>
+                        <div class="news-module-title">
+                            <h2>Design Best Practices</h2>
+                            <p class="news-module-description">Guidelines for reliable power system design</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Essential Design Rules</h3>
+                    <ul class="news-enhanced-list">
+                        <li><strong>Conservative Derating:</strong> Apply 20-30% additional margin beyond datasheet requirements</li>
+                        <li><strong>Thermal Management:</strong> Design adequate cooling for your operating environment</li>
+                        <li><strong>Input Range Planning:</strong> Consider all possible input voltage variations</li>
+                        <li><strong>Environmental Testing:</strong> Test at maximum expected temperature and minimum input voltage</li>
+                        <li><strong>Documentation:</strong> Document your derating calculations for future reference</li>
+                    </ul>
+                    
+                    <h3>Common Mistakes to Avoid</h3>
+                    <ul class="news-enhanced-list">
+                        <li><strong>Ignoring Thermal Rise:</strong> Using room temperature instead of actual operating temperature</li>
+                        <li><strong>Optimistic Planning:</strong> Designing for typical rather than worst-case conditions</li>
+                        <li><strong>Single Point Analysis:</strong> Not considering combined effects of temperature and voltage</li>
+                        <li><strong>Inadequate Margins:</strong> Operating too close to maximum derated values</li>
+                    </ul>
+                </article>
+
+                <!-- Conclusion Module -->
+                <article class="news-content-module">
+                    <div class="news-module-header">
+                        <div class="news-module-icon">🎯</div>
+                        <div class="news-module-title">
+                            <h2>Conclusion: Why It Matters</h2>
+                            <p class="news-module-description">The critical importance of proper derating in reliable design</p>
+                        </div>
+                    </div>
+                    
+                    <p>Properly applying derating based on the datasheet curves is not optional; it is essential for designing a reliable, long-lasting product. Pushing a power supply to its absolute limits without considering temperature and input voltage is a recipe for field failures.</p>
+                    
+                    <p>When in doubt, our FAE team can help you interpret these curves for your specific application. The investment in proper derating analysis during the design phase pays dividends in reduced warranty costs, improved customer satisfaction, and enhanced product reputation.</p>
+                    
+                    <div class="news-stats-module">
+                        <div class="news-module-header">
+                            <div class="news-module-icon">📊</div>
+                            <div class="news-module-title">
+                                <h2>Impact of Proper Derating</h2>
+                                <p class="news-module-description">Measurable benefits of following derating guidelines</p>
+                            </div>
+                        </div>
+                        
+                        <div class="news-stats-grid">
+                            <div class="news-stat-item">
+                                <span class="news-stat-number">90%</span>
+                                <span class="news-stat-label">Reduction in Field Failures</span>
+                            </div>
+                            <div class="news-stat-item">
+                                <span class="news-stat-number">2-3x</span>
+                                <span class="news-stat-label">Extended Operating Life</span>
+                            </div>
+                            <div class="news-stat-item">
+                                <span class="news-stat-number">50%</span>
+                                <span class="news-stat-label">Lower Warranty Costs</span>
+                            </div>
+                            <div class="news-stat-item">
+                                <span class="news-stat-number">99.9%</span>
+                                <span class="news-stat-label">Reliability Achievement</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Technical Support CTA -->
+                <div class="modern-cta-section">
+                    <h3>Need Help with Derating Analysis?</h3>
+                    <p>Our experienced FAE team can help you interpret derating curves and optimize your power system design for maximum reliability.</p>
+                    <div class="cta-buttons">
+                        <a href="../products/" class="cta-btn">Browse MORNSUN Products</a>
+                        <a href="../contact.html" class="cta-btn secondary">Contact Technical Support</a>
+                    </div>
+                </div>
+
+                <!-- Related Articles Module -->
+                <div class="news-related-module">
+                    <div class="news-related-header">
+                        <h2 class="news-related-title">Related Technical Articles</h2>
+                        <p class="news-related-subtitle">Explore more power supply design guidance and best practices</p>
+                    </div>
+                    
+                    <div class="news-related-grid">
+                        <article class="news-related-card">
+                            <div class="news-related-image">🌡️</div>
+                            <div class="news-related-content">
+                                <div class="news-related-meta">
+                                    <span>📅 Technical Guide</span>
+                                    <span>🏷️ Thermal Design</span>
+                                </div>
+                                <h3 class="news-related-card-title">Power Supply Thermal Management Basics</h3>
+                                <p class="news-related-excerpt">Essential principles for managing heat in power supply designs to ensure optimal performance and reliability.</p>
+                                <a href="thermal-management.html" class="news-read-more">Read More →</a>
+                            </div>
+                        </article>
+                        
+                        <article class="news-related-card">
+                            <div class="news-related-image">🔍</div>
+                            <div class="news-related-content">
+                                <div class="news-related-meta">
+                                    <span>📅 Selection Guide</span>
+                                    <span>🏷️ Product Selection</span>
+                                </div>
+                                <h3 class="news-related-card-title">How to Choose the Right MORNSUN AC/DC Power Supply</h3>
+                                <p class="news-related-excerpt">Comprehensive guide to selecting the optimal MORNSUN power supply for your application requirements.</p>
+                                <a href="select-mornsun-ac-dc.html" class="news-read-more">Read More →</a>
+                            </div>
+                        </article>
+                        
+                        <article class="news-related-card">
+                            <div class="news-related-image">🛠️</div>
+                            <div class="news-related-content">
+                                <div class="news-related-meta">
+                                    <span>📅 Troubleshooting</span>
+                                    <span>🏷️ Problem Solving</span>
+                                </div>
+                                <h3 class="news-related-card-title">Power Supply Troubleshooting Guide</h3>
+                                <p class="news-related-excerpt">Step-by-step troubleshooting procedures for diagnosing and resolving common power supply issues.</p>
+                                <a href="troubleshooting-guide.html" class="news-read-more">Read More →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Technical Tags -->
+                <div class="news-sharing-module">
+                    <h3 class="news-sharing-title">Technical Tags</h3>
+                    <div class="technical-tags">
+                        <a href="#" class="tag">Derating</a>
+                        <a href="#" class="tag">Reliability</a>
+                        <a href="#" class="tag">Datasheet</a>
+                        <a href="#" class="tag">Thermal Management</a>
+                        <a href="#" class="tag">Power Supply Design</a>
+                        <a href="#" class="tag">Application Engineering</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>About LiTong</h4>
+                    <p>Your trusted MORNSUN authorized distributor providing cutting-edge power solutions with comprehensive engineering support.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../products/">Products</a></li>
+                        <li><a href="../solutions/">Solutions</a></li>
+                        <li><a href="../support/">Support</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="../support/">Technical Support</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@litong-power.com<br>Phone: +1-555-MORNSUN</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Power. All Rights Reserved.</p>
+                <p><strong>LiTong Power - MORNSUN Official Authorized Tier 1 Distributor</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

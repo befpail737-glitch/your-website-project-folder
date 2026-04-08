@@ -1,0 +1,40 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="#e8f4f8"/>
+  
+  <!-- EV Charging Station -->
+  <rect x="50" y="80" width="60" height="160" fill="#0033A0" rx="10"/>
+  <rect x="60" y="90" width="40" height="30" fill="#00AEEF"/>
+  <circle cx="80" cy="140" r="15" fill="#FFC72C"/>
+  <rect x="65" y="170" width="30" height="50" fill="#333"/>
+  
+  <!-- Charging cable -->
+  <path d="M95 140 Q150 120 200 140" stroke="#333" stroke-width="8" fill="none"/>
+  
+  <!-- Electric vehicle -->
+  <rect x="200" y="150" width="120" height="60" fill="#00AEEF" rx="15"/>
+  <rect x="210" y="140" width="100" height="20" fill="#0033A0" rx="10"/>
+  <circle cx="230" cy="220" r="15" fill="#333"/>
+  <circle cx="290" cy="220" r="15" fill="#333"/>
+  
+  <!-- Power modules inside station -->
+  <rect x="350" y="100" width="120" height="120" fill="white" stroke="#0033A0" stroke-width="2"/>
+  <text x="410" y="120" font-family="Arial, sans-serif" font-size="12" fill="#0033A0" text-anchor="middle" font-weight="bold">Power Modules</text>
+  
+  <!-- Module representations -->
+  <rect x="365" y="130" width="25" height="15" fill="#FFC72C"/>
+  <rect x="395" y="130" width="25" height="15" fill="#FFC72C"/>
+  <rect x="425" y="130" width="25" height="15" fill="#FFC72C"/>
+  <rect x="365" y="150" width="25" height="15" fill="#00AEEF"/>
+  <rect x="395" y="150" width="25" height="15" fill="#00AEEF"/>
+  <rect x="425" y="150" width="25" height="15" fill="#00AEEF"/>
+  <rect x="365" y="170" width="25" height="15" fill="#0033A0"/>
+  <rect x="395" y="170" width="25" height="15" fill="#0033A0"/>
+  <rect x="425" y="170" width="25" height="15" fill="#0033A0"/>
+  
+  <!-- Labels -->
+  <text x="375" y="200" font-family="Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">AC/DC</text>
+  <text x="405" y="200" font-family="Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">DC/DC</text>
+  <text x="435" y="200" font-family="Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">Aux</text>
+  
+  <text x="250" y="280" font-family="Arial, sans-serif" font-size="18" fill="#0033A0" text-anchor="middle" font-weight="bold">EV Charging Station Power Solution</text>
+</svg>
